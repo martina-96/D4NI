@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+    <div class="main">
+        
+        <h1 class="main__title">Graph result</h1>
+        
+        <ul class="graph-result">
+            {%for graph in graph_data%}
+            <li>
+                <iframe 
+                        title="displaCy visualization of dependencies" 
+                        src="data:text/html,<html><head></head><body><div>{{graph}}</div></body></html>"
+                        frameborder="0">
+                </iframe>
+            </li>
+            {%endfor%}
+        </ul>
+            
+    </div>
+
+{% endblock %}

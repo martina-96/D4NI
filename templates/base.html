@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" type= "text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    </head>
+    <body class="home">
+        <header>
+            <a class="header__home" href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='images/home.png') }}" alt="Home"></a>
+            <nav>
+                <ul>
+                    <li class="title">D4NI - Strumento per la creazione di dati strutturati per corpus</li>
+                    <li>
+                        <a href="{{ url_for('display_tree') }}">Tree Result</a>
+                    </li>
+                    /
+                    <li>
+                        <a href="{{ url_for('display_graph') }}">Graph Result</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__logo"><img src="{{ url_for('static', filename='images/logo.png') }}" alt="Universita di Pisa"/></div>
+        </header>
+
+        {% block body %}{% endblock %}
+
+        <footer>
+            <img src="{{ url_for('static', filename='images/logo-bianco.png') }}" alt="Universita di Pisa">
+            <div class="testo-footer">
+                D4NI è un servizio web che sfrutta un algoritmo intelligente che ha lo scopo di creare dati strutturati per corpus.
+                <br>Permette di mostrare diversi tipi di ooutput che un'analisi testuale può fornire ed effettuare il download dei dati nella forma più comoda per essere usati con <a href="https://graphneural.network/">Spektral</a>.
+                <br>È possibile effettuare il download del codice su <a href="https://github.com/martina-96/D4NI">github</a> e modificarlo a proprio piacimento.
+            </div>
+        </footer>
+    </body>
+</html>

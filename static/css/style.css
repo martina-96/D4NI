@@ -1,0 +1,240 @@
+body.home {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    background: white;
+    background-size: contain;
+    
+}
+h1, h2, ul, li, h3 {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+h3 {
+    font-size: 14px;
+}
+
+li {
+    list-style-type: none;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    background: #fafafa;
+    box-shadow: 1px 1px 3px rgba(204, 204, 204, 0.534);
+}
+header nav {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+.header__name {
+    position: fixed;
+    left: 20px;
+}
+.header__logo {
+    position: fixed;
+    right: 20px;
+}
+.header__logo img {
+    height: 90px;
+}
+header ul {
+    display: flex;
+    color: #ccc;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+header li.title {
+    font-size: 13px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #b7b7b7;
+}
+strong {
+    color: #67afd7;
+    font-weight: normal;
+}
+
+header li {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+header a {
+    text-decoration: none;
+    color: #67afd7;
+    font-size: 15px;
+}
+
+.header__home {
+    position: absolute;
+    left: 20px;
+}
+.main {
+    width: 100%;
+    margin: auto;
+    padding-top: 150px;
+    padding-bottom: 70px;
+    
+}
+
+.main__title {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #67afd7;
+}
+.main__subtitle {
+    text-align: center;
+    font-size: 25px;
+    color: #67afd7;
+}
+.main__instruction {
+    text-align: center;
+    font-size: 20px;
+    color: #67afd7;
+    padding: 8px;
+}
+.main__subtitle2 {
+    text-align: center;
+    font-size: 18px;
+    color: #67afd7;
+    margin-bottom: 30px;
+}
+.main__subtitle img {
+    margin-right: 10px;
+}
+
+.main-form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    margin: auto;
+}
+.main-form textarea {
+    width: 80%;
+    border: 1px solid rgb(218, 218, 218);
+    background: #fff;
+    margin: auto;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px #00000008;
+    padding: 10px;
+    font-family: 'Quicksand', sans-serif;
+}
+.inserisci-testo {
+    display: flex;
+    font-size: 14px;
+    text-align: center;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+.input-radio {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+    font-size: 14px;
+}
+a {
+    color: #365e75;
+    text-decoration: none;
+}
+input[type='submit'] {
+    width: 100px;
+    margin: auto;
+    color: #67afd7;
+    font-weight: bold;
+    background: #fafafa;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px #00000012;
+    border: 2px solid #67afd7;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+    padding: 8px 7px;
+}
+
+footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 100%;
+    background: #67afd7;
+    color: #fff;
+    min-height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    position: relative;
+}
+footer img {
+    margin-right: 20px;
+    height: 150px;
+}
+.testo-footer {
+    width: 70%;
+    text-align: justify;
+    
+}
+
+
+/* tree */
+.tree-result {
+    padding-top: 50px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+.tree-result li {
+    width: 100%;
+}
+.tree-result li iframe {
+    border: 1px solid #dedede;
+    border-radius: 10px;
+    height: 90vh;
+    width: 95%;
+    margin-bottom: 1rem;
+}
+
+
+/* graph */
+.graph-result {
+    padding-top: 50px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+.graph-result li {
+    width: 100%;
+}
+.graph-result li iframe {
+    border: 1px solid #dedede;
+    border-radius: 10px;
+    height: 300px;
+    width: 95%;
+    margin-bottom: 1rem;
+}

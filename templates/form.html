@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+<div class="main">
+  <h1 class="main__title">D4NI</h1>
+  <h2 class="main__subtitle"><img src="{{ url_for('static', filename='images/pencil.png') }}">Strumento per la creazione di dati strutturati <br>per corpus</h2>
+  <form class="main-form" method="post" enctype=multipart/form-data>
+        <span class="main__instruction">Inserisci il testo oppure scegli un file .txt</span>
+      <textarea id="inputText" name="testo"></textarea>
+      <div class="inserisci-testo">
+          <span class="text"></span>
+          <input type="file" accept="text/plain" name="file"> 
+      </div>
+      <div class="input-radio">
+          <div class="glove-container">
+              <ul>
+                  <li><input type="radio" name="Glove" value="G1" checked><label>Glove1</label></li>
+                  <li><input type="radio" name="Glove" value="G2"><label>Glove2</label></li>
+                  <li><input type="radio" name="Glove" value="G3"><label>Glove3</label></li>
+                  <li><input type="radio" name="Glove" value="G4"><label>Glove4</label></li>
+              </ul>
+              
+          </div>
+          <div class="option-container">
+              <li><input type="radio" name="Output" value="GR"  checked><label>Graph</label></li>
+              <li><input type="radio" name="Output" value="TR"><label>Tree (<a href="https://github.com/mshang/syntree">Miles Shang</a>)</label></li>
+              <li><input type="radio" name="Output" value="DS"><label>Download Dataset</label></li>
+          </div>
+          
+      </div>
+      <input type="submit" name="" value="Invia">
+  </form>
+</div>
+
+{% endblock %}
